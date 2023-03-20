@@ -8,6 +8,8 @@ import javax.swing.JOptionPane;
  */
 public class Mavenproject1 {
     public static void main(String[] args) {
+	    String a = "Este es el texto de prueba. Todo Ok";
+                 System.out.print(a);
         
         	configAIRConnParameters cnf = new configAIRConnParameters();
 
