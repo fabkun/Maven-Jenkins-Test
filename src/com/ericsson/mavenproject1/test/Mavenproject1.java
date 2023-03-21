@@ -8,7 +8,6 @@ import javax.swing.JOptionPane;
  */
 public class Mavenproject1 {
     public static void main(String[] args) {
-<<<<<<< HEAD
          String newLine = System.getProperty("line.separator");
                 String a = "Este es el texto de prueba. Todo Ok";
                  System.out.print(a + newLine);
@@ -17,17 +16,13 @@ public class Mavenproject1 {
                  int option1 = Integer.parseInt( args[0]);
                  int option2 = Integer.parseInt( args[1]);
 
-=======
-	    String a = "Este es el texto de prueba. Todo Ok";
-                 System.out.print(a);
->>>>>>> c0d1fef3e4e2b7c09f76bf19787dacb2c7d5b5c6
         
         	configAIRConnParameters cnf = new configAIRConnParameters();
 
-		String menu = "Choose one option: 1, 2, 3 o 4 \n";
-		for (int i = 1; i <= 4; i++) {
-			menu = menu + " option " + i + "\n";
-		}
+//		String menu = "Choose one option: 1, 2, 3 o 4 \n";
+//		for (int i = 1; i <= 4; i++) {
+//			menu = menu + " option " + i + "\n";
+//		}
                 
 		//int option1 = Integer.parseInt( JOptionPane.showInputDialog(menu));       
                 
