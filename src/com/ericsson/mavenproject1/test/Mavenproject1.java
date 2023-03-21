@@ -8,6 +8,14 @@ import javax.swing.JOptionPane;
  */
 public class Mavenproject1 {
     public static void main(String[] args) {
+         String newLine = System.getProperty("line.separator");
+                String a = "Este es el texto de prueba. Todo Ok";
+                 System.out.print(a + newLine);
+
+                 
+                 int option1 = Integer.parseInt( args[0]);
+                 int option2 = Integer.parseInt( args[1]);
+
         
         	configAIRConnParameters cnf = new configAIRConnParameters();
 
@@ -16,31 +24,36 @@ public class Mavenproject1 {
 			menu = menu + " option " + i + "\n";
 		}
                 
-		int option1 = Integer.parseInt( JOptionPane.showInputDialog(menu));       
+		//int option1 = Integer.parseInt( JOptionPane.showInputDialog(menu));       
                 
 		switch (option1) {
 		case 1:
-			JOptionPane.showMessageDialog(null,
-					"Congratulations, you have chosen option 1");
-                        cnf.AIRconnectionParameters();
+//			JOptionPane.showMessageDialog(null,
+//					"Congratulations, you have chosen option 1");
+                                     System.out.print("Opción 1" + newLine);
+
+                        cnf.AIRconnectionParameters(option2);
                         
 			break;
 		case 2:
-			JOptionPane.showMessageDialog(null,
-					"Congratulations, you have chosen option 2");
-                                                cnf.AIRconnectionParameters();
+//			JOptionPane.showMessageDialog(null,
+//					"Congratulations, you have chosen option 2");
+                                                         System.out.print("Opción 2" + newLine);
+
+                                                cnf.AIRconnectionParameters(option2);
 
 			break;
 		case 3:
-			JOptionPane.showMessageDialog(null,
-					"Congratulations, you have chosen option 3");
-                                                cnf.AIRconnectionParameters();
+                                                         System.out.print("Opción 3" + newLine);			
+                                                cnf.AIRconnectionParameters(option2);
 
 			break;
 		case 4:
-			JOptionPane.showMessageDialog(null,
-					"Congratulations, you have chosen option 4");
-                                                cnf.AIRconnectionParameters();
+                                                         System.out.print("Opción 4" + newLine);
+
+//			JOptionPane.showMessageDialog(null,
+//					"Congratulations, you have chosen option 4");
+                                                cnf.AIRconnectionParameters(option2);
 
 			break;
 		default:
